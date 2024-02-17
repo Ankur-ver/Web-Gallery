@@ -24,7 +24,9 @@
                 <li>
                     <a href="#">
 
-                        <span class="active2">Contact Us</span>
+                        <span class="active2"onclick="
+                        slideindex++;
+                        loginn()">Login</span>
 
                     </a>
 
@@ -70,19 +72,19 @@
         </span>
         
         
-        <div class="cor">
+        <a href="carousel.html"> <div class="cor">
             <div class="image">
                 <img id="im"class="im3" src="CSS-Variables-3D-Carousel-removebg-preview.png">
             </div>
             <h4><a class="see" href="carousel.html">Carousel</a></h4>
         </div>
-        <div class="staged_scrolling">
+        <a href="staged_scrolling.html"><div class="staged_scrolling">
             <div class="image">
                 <img id="im"class="im1" src="Devices_1_e.jpg">
             </div>
-            <h4><a class="see" href="staged_scrolling">Staged-Scrolling</a></h4>
+            <h4><a class="see" href="staged_scrolling.html">Staged-Scrolling</a></h4>
         </div>
-        <div class="gallery">
+        <a href="collage.html"><div class="gallery">
             <div class="image">
                 <img id="im"class="im2" src="green-nature-collage-photo-design-template-75d9bd314c1317408ca543f6f8e2f322_screen.jpg">
             </div>
@@ -91,13 +93,21 @@
     
     </div>
     <script>
-        let btn = document.getElementsByClassName('active2')[0];
-        let login = document.getElementsByClassName('page')[0];
-        btn.addEventListener('click', (e) => {
-           console.log(e);
-       
+        let slideindex=0;
+      
+    
+        function loginn(){
+            let login = document.getElementsByClassName('page')[0];
+            let cor=document.getElementsByClassName('cor')[0];
+            if(slideindex%2==0){
+                login.classList.remove('display')
+                cor.style.visibility="visible";
+            }else{
+              login.classList.add('display')
+              cor.style.visibility="hidden";
 
-        }) 
+            }
+        }
 
 
     </script>
