@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house">
+                            <span class="nav-text">Home</span>
+                        </i>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+
+                        <span class="active2">Contact Us</span>
+
+                    </a>
+
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bars">
+                            <span class="nav-text">Menu</span>
+                        </i>
+                    </a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <div class="page animate">
+            <div class="image3">
+                <img src="user image.png" id="ank">
+            </div>
+            <div class="form">
+                <form>
+                    <label for="text">Username</label>
+                    <input type="text" id="text" placeholder="Enter Username" name="user">
+                    <br>
+                    <label for="pass">Password</label>
+                    <input type="password" id="text" placeholder="Enter password" name="pass">
+                    <br>
+                    <label for="pass">Confirm Password</label>
+                    <input type="password" id="text" placeholder="Enter password" name="pass">
+                    <br>
+                    <button id="login">Login</button>
+                    <br>
+                    <label for="remember" id="reme">Remember me</label>
+                    <input type="checkbox" id="remember">
+
+                </form>
+            </div>
+        </div>
+   
+    <div class="hero">
+        <span class="tex">
+            <h1>Web Gallery</h1>
+        </span>
+        
+        
+        <div class="cor">
+            <div class="image">
+                <img id="im"class="im3" src="CSS-Variables-3D-Carousel-removebg-preview.png">
+            </div>
+            <h4><a class="see" href="carousel.html">Carousel</a></h4>
+        </div>
+        <div class="staged_scrolling">
+            <div class="image">
+                <img id="im"class="im1" src="Devices_1_e.jpg">
+            </div>
+            <h4><a class="see" href="staged_scrolling">Staged-Scrolling</a></h4>
+        </div>
+        <div class="gallery">
+            <div class="image">
+                <img id="im"class="im2" src="green-nature-collage-photo-design-template-75d9bd314c1317408ca543f6f8e2f322_screen.jpg">
+            </div>
+            <h4><a class="see" href="collage.html">Collage</a></h4>
+        </div>
+    
+    </div>
+    <script>
+        let btn = document.getElementsByClassName('active2')[0];
+        let login = document.getElementsByClassName('page')[0];
+        btn.addEventListener('click', (e) => {
+           console.log(e);
+       
+
+        }) 
+
+
+    </script>
+</body>
+
+</html>
