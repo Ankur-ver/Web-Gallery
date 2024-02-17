@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <title>document</title>
 <style>
   *{
@@ -37,8 +38,45 @@
  background:-webkit-linear-gradient( rgba(255, 0, 0, 0.937),rgb(183, 104, 209));
   -webkit-background-clip: text;
    -webkit-text-fill-color:transparent;
-   margin-top:10px;
+   margin-top:60px;
   }
+  
+li{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 14px;
+  list-style: none;
+}
+header{
+  background:transparent;
+  position:fixed;
+  width:100%;
+  z-index:5;
+  backdrop-filter: blur(10px);
+}
+ul{
+  display:flex;
+  justify-content:space-evenly;
+ 
+}
+a{
+  text-decoration: none;
+ color:white;
+}
+a:hover{
+  color: hotpink;
+}
+.contact{
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+ background:transparent;
+  height:50px;
+  margin-top:0px;
+  z-index:5;
+  backdrop-filter: blur(10px);
+}
   
   .collage img {
     
@@ -52,13 +90,13 @@
     border:2px solid hotpink;
   }
   #eye1{
-    margin-top: 80px;
+    margin-top: 140px;
   }
   #eye2{
-    margin-top: 80px;
+    margin-top: 140px;
   }
   #eye3{
-    margin-top: 80px;
+    margin-top: 140px;
   }
   
   .collage img:hover {
@@ -69,6 +107,36 @@
 </style>
 </head>
 <body>
+  <header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="fa-solid fa-house">
+                        <span class="nav-text">Home</span>
+                    </i>
+                </a>
+
+            </li>
+            <li>
+                <a href="#">
+
+                    <span class="active2">Login</span>
+
+                </a>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bars">
+                        <span class="nav-text">Menu</span>
+                    </i>
+                </a>
+
+            </li>
+        </ul>
+    </nav>
+</header>
 <div class="collage">
   <div class="image">
     <h1>Image Collage</h1>
