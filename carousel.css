@@ -7,6 +7,45 @@ body{
   align-items: center;
   background-color:black
 }
+
+li{
+  text-align: center;
+  text-decoration: none;
+  margin-top: 14px;
+  list-style: none;
+}
+ul{
+  display:flex;
+  justify-content:space-evenly;
+ 
+}
+a{
+  text-decoration: none;
+ color:white;
+}
+a:hover{
+  color: hotpink;
+}
+.contact{
+  font-size: 22px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+ background:transparent;
+  height:50px;
+  margin-top:-5px;
+  z-index:5;
+  backdrop-filter: blur(10px);
+  
+}
+header{
+  background:transparent;
+  position:fixed;
+  width:100%;
+  z-index:5;
+  top:3vh;
+  backdrop-filter: blur(10px);
+}
 .corosul{
   width:100%;
 
